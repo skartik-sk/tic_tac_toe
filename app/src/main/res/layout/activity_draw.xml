@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".draw">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#E9E4F0"
+        android:capitalize="none"
+        android:fontFamily="@font/montaga"
+        android:onClick="openActivity"
+        android:paddingLeft="57sp"
+        android:paddingTop="14sp"
+        android:paddingRight="57sp"
+        android:paddingBottom="14sp"
+        android:shadowColor="#351C1C"
+        android:text="Replay"
+        android:textAllCaps="false"
+        android:textColor="#0A2232"
+        android:textColorHighlight="#E41313"
+        android:textColorHint="#000000"
+        android:textColorLink="#CA4F4F"
+        android:textSize="35sp"
+        app:cornerRadius="25sp"
+
+        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.097"
+        app:rippleColor="#BB0909"
+        app:strokeColor="#523E3E" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#78C4D8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/draw" />
+
+    <TextView
+        android:id="@+id/nothinkg"
+        android:layout_width="193dp"
+        android:layout_height="74dp"
+        android:fontFamily="@font/montaga"
+        android:gravity="center"
+        android:text="It's a Draw"
+        android:textColor="@color/black"
+
+        android:textColorHint="#000000"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintVertical_bias="0.031" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
