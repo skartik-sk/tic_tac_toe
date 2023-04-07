@@ -26,9 +26,5 @@ Timer timer;
                 finish();
             }
         }, 1000);
-
-
     }
-
-
 }
