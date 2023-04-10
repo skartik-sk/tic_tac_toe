@@ -281,7 +281,7 @@
 
             android:paddingBottom="8sp"
             android:text="Player"
-            android:textColorHint="#73000000"
+            android:textColorHint="#000000"
 
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"

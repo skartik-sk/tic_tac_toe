@@ -18,7 +18,7 @@ public class MainActivity3 extends AppCompatActivity {
     }
     public void openActivity(View v){
 //        Toast.makeText(this, "Welcome Player", Toast.LENGTH_SHORT).show();
-        Intent intent = new Intent(this,Friend1.class);
+        Intent intent = new Intent(this,game3.class);
         startActivity(intent);
 
     }

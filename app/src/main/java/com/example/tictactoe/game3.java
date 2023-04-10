@@ -18,7 +18,7 @@ public class game3 extends AppCompatActivity {
     //    boolean active=true;
     public static final String Extraname = "com.example.tictactoe.extra.name12";
     TextView name,name2;
-    @SuppressLint("MissingInflatedId")
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,14 +29,14 @@ public class game3 extends AppCompatActivity {
         name = findViewById(R.id.text1);
         name2 = findViewById(R.id.text2);
 
-        Intent intet1 = getIntent();
-        String finalname = intet1.getStringExtra(Friend2.Extranames);
+//        Intent intet1 = getIntent();
+//        String finalname = intet1.getStringExtra(Friend2.Extranames);
 
-        name.setText(finalname) ;
-        Intent intet2 = getIntent();
-        String finalname2 = intet2.getStringExtra(Friend2.Extraname);
+        name.setText("Player2") ;
+//        Intent intet2 = getIntent();
+//        String finalname2 = intet2.getStringExtra(Friend2.Extraname);
 
-        name2.setText(finalname2);
+        name2.setText("Player 1");
 
     }
     int currentplayer =0;
@@ -79,14 +79,14 @@ public class game3 extends AppCompatActivity {
                 if(gameState[winConditions[0]]==0){
                     Toast.makeText(this, "o won", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(this,winner3.class);
-                    intent.putExtra(Extraname, name2.getText());
+                    intent.putExtra(Extraname, "Player1");
                     startActivity(intent);
 
                 }
                 else{
                     Toast.makeText(this, "x Won", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(this,winner3.class);
-                    intent.putExtra(Extraname,name.getText());
+                    intent.putExtra(Extraname,"Player2");
                     startActivity(intent);
 
                 }

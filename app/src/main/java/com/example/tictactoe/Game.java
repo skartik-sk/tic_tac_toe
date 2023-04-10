@@ -75,7 +75,7 @@ public class Game extends AppCompatActivity {
                 if (gameState[winConditions[0]] == 0) {
                     Toast.makeText(this, "o won", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(this, winner2.class);
-                    intent.putExtra(Extraname, name.getText());
+                    intent.putExtra(Extraname, "Player");
                     startActivity(intent);
 
                 } else {

@@ -19,13 +19,13 @@ public class Comp1 extends AppCompatActivity {
 
     public void openActivity(View v){
 
-        Intent intent = new Intent(this,Comp2.class);
+        Intent intent = new Intent(this,Game2.class);
         startActivity(intent);
 
     }
     public void openActivity2(View v){
 
-        Intent intent1 = new Intent(this,Comp3.class);
+        Intent intent1 = new Intent(this,Game.class);
         startActivity(intent1);
 
     }

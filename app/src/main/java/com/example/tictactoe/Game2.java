@@ -79,7 +79,7 @@ public class Game2 extends AppCompatActivity {
                     Toast.makeText(this, "x Won", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(this,winner.class);
 
-                    intent.putExtra(Extraname, name.getText());
+                    intent.putExtra(Extraname, "Player");
                     startActivity(intent);
 
                 }
