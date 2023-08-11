@@ -16,7 +16,7 @@ import android.widget.Toast;
 
 public class Game extends AppCompatActivity {
     //    boolean active=true;
-    public static final String Extraname = "com.example.tictactoe.extra.name125";
+    public static final String Extraname = "com.example.tictactoe.extra.name1210";
     TextView name;
 
     @SuppressLint("MissingInflatedId")
@@ -36,10 +36,10 @@ public class Game extends AppCompatActivity {
     }
 
     int currentplayer = 0;
-    int[] gameState = {5, 5, 5, 5, 5, 5, 5, 5, 5, 5};
-    int[][] winCondition = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9},
-            {1, 4, 7}, {2, 5, 8}, {3, 6, 9},
-            {1, 5, 9}, {3, 5, 7}};
+    int[] gameState = {10, 10, 10, 10, 10, 10, 10, 10, 10, 10};
+    int[][] winCondition = {{1,2,3},{4,5,6},{7,8,9},
+            {1,4,7},{2,5,8},{3,6,9},
+            {1,5,9},{3,5,7}};
 
     int turn = 0;
     public void onClick(View view) {
@@ -54,7 +54,7 @@ public class Game extends AppCompatActivity {
             Intent intents = new Intent(this, draw.class);
             startActivity(intents);
         }
-        if (gameState[tappedImage] == 5) {
+        if (gameState[tappedImage] == 10) {
 
             gameState[tappedImage] = currentplayer;
             if (currentplayer == 0) {
@@ -71,7 +71,7 @@ public class Game extends AppCompatActivity {
         for (int[] winConditions : winCondition) {
             if (gameState[winConditions[0]] == gameState[winConditions[1]] &&
                     gameState[winConditions[1]] == gameState[winConditions[2]] &&
-                    gameState[winConditions[0]] != 5) {
+                    gameState[winConditions[0]] != 10) {
                 if (gameState[winConditions[0]] == 0) {
                     Toast.makeText(this, "o won", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(this, winner2.class);

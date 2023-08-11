@@ -14,29 +14,29 @@
         android:fontFamily="@font/montaga"
         android:text="Choose!!"
         android:textColor="@color/white"
-        android:textSize="25sp"
+        android:textSize="48sp"
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.232" />
+        app:layout_constraintVertical_bias="0.286" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
         android:backgroundTint="#E9E4F0"
         android:capitalize="none"
         android:fontFamily="@font/montaga"
+        android:onClick="openActivity"
         android:paddingLeft="15sp"
         android:paddingTop="14sp"
         android:paddingRight="15sp"
         android:paddingBottom="14sp"
         android:shadowColor="#351C1C"
         android:text="x"
-        android:onClick="openActivity"
         android:textAllCaps="false"
         android:textColor="#0A2232"
         android:textColorHighlight="#E41313"
@@ -44,11 +44,12 @@
         android:textColorLink="#CA4F4F"
         android:textSize="50sp"
         app:cornerRadius="25sp"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintBottom_toBottomOf="@+id/button2"
+        app:layout_constraintEnd_toStartOf="@+id/button2"
+        app:layout_constraintHorizontal_bias="0.433"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:layout_constraintVertical_bias="1.0"
         app:rippleColor="#BB0909"
         app:strokeColor="#523E3E" />
 
@@ -75,10 +76,10 @@
         app:cornerRadius="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.814"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView6"
-        app:layout_constraintVertical_bias="0.419"
+        app:layout_constraintVertical_bias="0.31"
         app:rippleColor="#BB0909"
         app:strokeColor="#523E3E" />
 </androidx.constraintlayout.widget.ConstraintLayout>

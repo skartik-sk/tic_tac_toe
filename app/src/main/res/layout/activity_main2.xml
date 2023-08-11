@@ -15,7 +15,7 @@
         android:shadowColor="@color/white"
         android:text="Hey, Player!"
         android:textColor="@color/white"
-        android:textSize="25sp"
+        android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -26,19 +26,19 @@
     <TextView
         android:id="@+id/textView2"
         android:layout_width="258dp"
-        android:layout_height="100dp"
+        android:layout_height="131dp"
         android:fontFamily="@font/montaga"
         android:lineSpacingExtra="5sp"
         android:text="Welcome to the Game. Let’s  play The most intrative Tic Tac Toe"
         android:textAlignment="center"
         android:textColor="@color/white"
-        android:textSize="20sp"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.112" />
+        app:layout_constraintVertical_bias="0.166" />
 
     <Button
         android:id="@+id/button"
