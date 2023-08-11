@@ -8,8 +8,10 @@ This app is build with Java in Android Studio. This app was built under the guid
 
 <!-- ![Alt Text](https://) -->
 <div align= "center" >
+
 <img src="./Start.jpg" width ="200" >
 <img src="./gamescr.jpg" width ="200" >
+
 
 </div>
 
